@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>IP Address Tracker</h1>
+        <form method="get" class="search-form">
+          <input
+            type="text"
+            placeholder="Search for any IP address or domain"
+            class="input-field"
+            required
+          />
+          <button type="submit" class="submit-btn">
+            <img src="imgs/icon-arrow.svg" alt="Submit" />
+          </button>
+        </form>
+        <div class="dataContainer">
+          <div class="dataBox">
+            <span>IP Address</span>
+            <h2 id="ip">192.168.154.218</h2>
+          </div>
+          <div class="dataBox">
+            <span>Location</span>
+            <h2 id="location">
+              Egypt, Mans,
+              <!-- <br /> -->
+              1009
+            </h2>
+          </div>
+          <div class="dataBox">
+            <span>Timezone</span>
+            <h2 id="timezone">UTC +02:00</h2>
+          </div>
+          <div class="dataBox">
+            <span>ISP</span>
+            <h2 id="isp">Te-Data</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="landing">
+      <!-- <h1>aaa</h1> -->
+      <img src="imgs/map.jpg" alt="" width="100%" height="100%" />
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+:root {
+  --dark-Gray: hsl(0, 0%, 17%);
+  --Gray: hsl(0, 0%, 59%);
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  max-height: 100vh;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  width: 100%;
+  height: 40vh;
+  background: url(../imgs/pattern-bg.png) #5363c7 center/cover no-repeat;
+}
+header .container {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header .container h1 {
+  font-size: 26px;
+  font-weight: 500;
+  color: #fff;
+}
+
+header .container .search-form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+header .container .search-form .input-field {
+  min-width: 30%;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 15px 15px;
+}
+@media (max-width: 767px) {
+  header .container .search-form .input-field {
+    min-width: 65%;
+  }
+}
+header .container .search-form .input-field:focus {
+  outline: 0;
+  border: 0;
+}
+header .container .search-form .input-field::placeholder {
+  font-size: 14px;
+}
+header .container .search-form .submit-btn {
+  background-color: var(--dark-Gray);
+  border-radius: 0 15px 15px 0;
+  padding: 0px 15px;
+  border: 0;
+  cursor: pointer;
+}
+header .container .search-form .submit-btn:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+header .container .dataContainer {
+  background-color: #fff;
+  padding: 20px 20px 20px 20px;
+  width: 75%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  z-index: 10;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  header .container .dataContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+header .container .dataContainer .dataBox span {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--Gray);
+}
+header .container .dataContainer .dataBox h3 {
+  margin-top: 5px;
+}
+.landing {
+  background-color: red;
+  height: 60vh;
+  overflow: hidden;
+}
